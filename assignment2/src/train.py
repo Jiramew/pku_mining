@@ -31,7 +31,7 @@ def train_with_simple_nn_model():
                       margins=True))
 
 
-def train_with_lstm_attention():
+def train_with_gru():
     train_data, train_label, test_data, test_label, \
     train_label_one_hot, test_label_one_hot, word_to_index, \
     index_to_word, word_to_vec_map, phrase_max_length = get_data()
@@ -57,5 +57,5 @@ def train_with_lstm_attention():
 
 
 if __name__ == '__main__':
-    # train_with_simple_nn_model()
-    train_with_lstm_attention()
+    train_with_gru()
+    train_with_simple_nn_model()
